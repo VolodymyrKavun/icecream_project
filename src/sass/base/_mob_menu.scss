@@ -1,0 +1,123 @@
+
+
+
+.mob-menu{
+  position: fixed;
+  background-color: #E17992;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height:  502px;
+  padding-top: 60px;
+  transform: translateX(100%);
+  transition: transform .2s;
+  z-index: 9;
+
+  &.is-hidden{
+   transform: translateX(0);
+   box-shadow: (-8px 0px 20px rgba(0, 0, 0, 0.25));;
+  }
+
+
+}
+
+
+.mobileMenu__container {
+  padding: 120px 20px;
+  background-color: #E17992;
+  width: 100vw;
+  height: 100vh;
+  @media screen and (min-width: 768px) {
+    width: 254px;
+  }
+  // margin-left: auto;
+  // margin-right: auto;
+}
+
+
+
+.mobileMenu__buttonBuyNow {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.mobileMenu__item {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  position: relative;
+}
+
+.mobileMenu__item ::before{
+content: "";
+position: absolute;
+left: -20px;
+top: 0;
+width: 116%;
+height: 1px;
+background-color: #E18298;
+}
+
+.mobileMenu__item:last-child::after{
+content: "";
+position: absolute;
+left: -20px;
+bottom: 0;
+width: 116%;
+height: 1px;
+background-color: #E18298;
+  
+}
+//  
+.mobileMenu__link {
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 18px;
+color: #FFFFFF;
+&:hover{
+  color: #D41443;
+}
+}
+
+
+.buttonMenu {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #D41443;
+  border: none;
+  // width: 209px;
+  height: 44px;
+  background: #FFFFFF;
+  border-radius: 22px;
+  text-align: center;
+  }
+  
+  .buttonMenu:hover{
+      background-color: #ECEBEB;
+  }
+  
+  .buttonMenu::after{
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-right: 2px solid #D41443;
+      border-top: 2px solid #D41443;
+      transform: rotate(45deg);
+      border-radius: 2px;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .buttonMenu:hover::after{
+      transform: rotate(225deg);
+  }
+  
+  .buttonMenu__text{
+      margin-right: 10px;
+  }

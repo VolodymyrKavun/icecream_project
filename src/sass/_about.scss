@@ -1,0 +1,238 @@
+.about {
+  position: relative;
+  background-color: getColor('background-about');
+  padding-top: 125px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 130px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 40px;
+  }
+}
+
+.about__bcg-wrap-milk {
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/About/mobail/about2_png.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 640px;
+    max-width: 480px;
+    margin: 0 auto;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/About/mobail/about2@2x_png.png');
+    }
+  }
+}
+.about__bcg-wrap-milk {
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/About/desktop/About1_png_desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 235px;
+    max-width: 1280px;
+    margin: 0 auto;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/About/desktop/about1@2x_png_desktop.png');
+    }
+  }
+}
+
+.about-wrapper__pre-title {
+  font-family: Titan One;
+  font-size: getFont('lable-size-mobile');
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: getColor('lable-color-text');
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.about-wrapper__inner {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 26px;
+  @media screen and (max-width: 768px) {
+    width: 200px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 55px;
+  }
+}
+
+.about-wrapper__title {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: getColor('title-color-main-text');
+  @media screen and (min-width: 768px) {
+    font-size: getFont('title-hero-mobile');
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: getFont('title-hero-laptop');
+    line-height: 1.15;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-wrapper__img-wrap {
+    margin-bottom: 45px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-wrapper__position {
+    display: inline-flex;
+    justify-content: center;
+  }
+}
+
+.about-wrapper__img {
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    margin-right: 17px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 75px;
+  }
+}
+
+.text-inner {
+  max-width: 220px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    max-width: 340px;
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 463px;
+  }
+}
+
+// .text-inner::after {
+//   content: '';
+//   position: absolute;
+//   z-index: 1;
+//   top: 600px;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   background-image: url('../images/About/mobail/about2_png.png');
+//   background-repeat: no-repeat;
+//   background-size: contain;
+// }
+
+.text-inner__top {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: getFont('mine-size-mobile');
+  color: getColor('secondary-color-text');
+  line-height: 1.62;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    font-size: getFont('secondary-size-mobile');
+    line-height: 1.76;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: getFont('samebtn-size-mobile');
+
+    letter-spacing: 0.04em;
+  }
+}
+
+.text-inner__midle {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: getFont('mine-size-mobile');
+  color: getColor('gray-color-text');
+  line-height: 1.62;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    font-size: getFont('secondary-size-mobile');
+    line-height: 1.76;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: getFont('samebtn-size-mobile');
+    line-height: 1.94;
+  }
+}
+
+.text-inner__bottom {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: getFont('mine-size-mobile');
+  color: getColor('gray-color-text');
+  line-height: 1.62;
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    font-size: getFont('secondary-size-mobile');
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: getFont('samebtn-size-mobile');
+    margin-bottom: 45px;
+  }
+}
+
+// height: 44px;
+
+.about-btn {
+  display: inline-block;
+  font-family: DM Sans;
+  font-size: getFont('mine-size-mobile');
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  border-radius: 22px;
+  background-color: getColor('mine-color-text');
+  color: getColor('title-color-main-text');
+  border: none;
+  cursor: pointer;
+  min-width: 175px;
+  height: 44px;
+  text-align: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    transform: scale(1.15);
+  }
+  @media screen and (min-width: 768px) {
+    font-size: getFont('samebtn-size-mobile');
+  }
+}
+
+.about-btn::after {
+  content: '';
+  display: inline-block;
+  margin-left: 10px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid getColor('title-color-main-text');
+  border-top: 2px solid getColor('title-color-main-text');
+  transform: rotate(45deg);
+  border-radius: 2px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-btn:hover::after {
+  transform: rotate(225deg);
+}
